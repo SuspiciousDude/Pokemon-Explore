@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3em;
+    color: #dc3545;
+  }
+  
+  .subtitle {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #212529;
+  }
+  
+  .hint {
+    margin-top: 20px;
+    color: #6c757d;
+  }
+  
+  .retryButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retryButton:hover {
+    background-color: #c82333;
+  }
+  

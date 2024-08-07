@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+.player {
+  font-family: 'Rajdhani' ,Helvetica, sans-serif;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  flex-direction: column;
+  color:  black;
+  font-size: 19px;
+  font-weight: 800;
+  image-rendering: pixelated;
+  scale: 1;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.player_name{
+  padding: 0 4px 0 4px;
+  margin: 0;
+  border-radius: 4px;
+  color: black;
+  background-color: antiquewhite;
+}
+
+.player_image{
+    width: 32px;
+    height: 38px;
+    transition: transform 0.3s ease-in-out;
+    image-rendering: pixelated;
+    margin: auto;
+}
+
+.walk_forward {
+  background: url('/src/assets/Player/Forward-Walk.png');
+  animation: walk 0.5s steps(3, end) infinite;
+}
+
+.walk_backward {
+  background: url('/src/assets/Player/Backward-Walk.png');
+  animation: walk 0.5s steps(3, end) infinite;
+}
+
+.walk_left {
+  width: 30px;
+  height: 52px;
+  background: url('/src/assets/Player/Left-Walk.png');
+  animation: walk 0.5s steps(3, end) infinite;
+}
+
+.walk_right {
+  background: url('/src/assets/Player/Right-Walk.png');
+  animation: walk 0.5s steps(3, end) infinite;
+}
+
+@keyframes walk {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -96px 0px;
+  }
+}
+
+
+.idle_forward {
+  background-image: url("src/assets/Player/Forward-Idle.png");
+}
+
+.idle_backward {
+  background-image: url("src/assets/Player/Backward-Idle.png");
+}
+
+.idle_left {
+  background-image: url("src/assets/Player/Left-Idle.png");
+}
+
+.idle_right {
+  background-image: url("src/assets/Player/Right-Idle.png");
+}
+
+.username{
+  font-family: 'Kanit-Regular';
+  position: absolute;
+  transform: translateX(-50%);
+  display: flex;
+  color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
